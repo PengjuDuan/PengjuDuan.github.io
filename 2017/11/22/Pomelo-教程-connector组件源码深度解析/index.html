@@ -13,7 +13,7 @@
     
     
     
-    <title>Pomelo 教程 ---- connecto组件源码深度解析 | 段鹏举的博客 | 自由源于自信,自信源于自律!</title>
+    <title>Pomelo 教程 ---- connector组件源码深度解析 | 段鹏举的博客 | 自由源于自信,自信源于自律!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -23,14 +23,14 @@
     <meta name="description" content="1. 组件分析1.1 什么是connector?connector其实就是Pomelo中的一个组件，俗称前端服务器，官方文档中的解释：  connector服务器接收客户端的连接请求，创建与客户端的连接，维护客户端的session信息。同时，接收客户端对后端服务器的请求，按照用户配置的路由策略，将请求路由给具">
 <meta name="keywords" content="Pomelo,教程,Nodejs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pomelo 教程 ---- connecto组件源码深度解析">
-<meta property="og:url" content="https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/index.html">
+<meta property="og:title" content="Pomelo 教程 ---- connector组件源码深度解析">
+<meta property="og:url" content="https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/index.html">
 <meta property="og:site_name" content="段鹏举的博客">
 <meta property="og:description" content="1. 组件分析1.1 什么是connector?connector其实就是Pomelo中的一个组件，俗称前端服务器，官方文档中的解释：  connector服务器接收客户端的连接请求，创建与客户端的连接，维护客户端的session信息。同时，接收客户端对后端服务器的请求，按照用户配置的路由策略，将请求路由给具体的后端服务器。当后端服务器处理完请求或者需要给客户端推送消息的时候，conne">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-22T17:06:22.271Z">
+<meta property="og:updated_time" content="2017-11-22T17:15:29.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pomelo 教程 ---- connecto组件源码深度解析">
+<meta name="twitter:title" content="Pomelo 教程 ---- connector组件源码深度解析">
 <meta name="twitter:description" content="1. 组件分析1.1 什么是connector?connector其实就是Pomelo中的一个组件，俗称前端服务器，官方文档中的解释：  connector服务器接收客户端的连接请求，创建与客户端的连接，维护客户端的session信息。同时，接收客户端对后端服务器的请求，按照用户配置的路由策略，将请求路由给具体的后端服务器。当后端服务器处理完请求或者需要给客户端推送消息的时候，conne">
     
         <link rel="alternate" type="application/atom+xml" title="段鹏举的博客" href="/atom.xml">
@@ -101,13 +101,6 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect">
-              <a href="/about"  >
-                <i class="icon icon-lg icon-link"></i>
-                关于我
-              </a>
-            </li>
-        
       </ul>
     </div>
   </div>
@@ -119,7 +112,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Pomelo 教程 ---- connecto组件源码深度解析</div>
+        <div class="flex-col header-title ellipsis">Pomelo 教程 ---- connector组件源码深度解析</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -141,7 +134,7 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Pomelo 教程 ---- connecto组件源码深度解析</h1>
+        <h1 class="title">Pomelo 教程 ---- connector组件源码深度解析</h1>
         <h5 class="subtitle">
             
                 <time datetime="2017-11-22T12:48:42.000Z" itemprop="datePublished" class="page-time">
@@ -170,11 +163,11 @@
         </nav>
     </aside>
     
-<article id="post-Pomelo-教程-connecto组件源码深度解析"
+<article id="post-Pomelo-教程-connector组件源码深度解析"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Pomelo 教程 ---- connecto组件源码深度解析</h1>
+        <h1 class="post-card-title">Pomelo 教程 ---- connector组件源码深度解析</h1>
         <div class="post-meta">
             <time class="post-time" title="2017-11-22 20:48:42" datetime="2017-11-22T12:48:42.000Z"  itemprop="datePublished">2017-11-22</time>
 
@@ -247,7 +240,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-11-22T17:06:22.271Z" itemprop="dateUpdated">2017-11-23 01:06:22</time>
+    最后更新时间：<time datetime="2017-11-22T17:15:29.535Z" itemprop="dateUpdated">2017-11-23 01:15:29</time>
 </span><br>
 
 
@@ -282,7 +275,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/&title=《Pomelo 教程 ---- connecto组件源码深度解析》 — 段鹏举的博客&pic=https://github.com/PengjuDuan/img/lion.jpeg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/&title=《Pomelo 教程 ---- connector组件源码深度解析》 — 段鹏举的博客&pic=https://github.com/PengjuDuan/img/lion.jpeg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -292,22 +285,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/&title=《Pomelo 教程 ---- connecto组件源码深度解析》 — 段鹏举的博客&source=大爷进来玩会啊~~~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/&title=《Pomelo 教程 ---- connector组件源码深度解析》 — 段鹏举的博客&source=大爷进来玩会啊~~~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Pomelo 教程 ---- connecto组件源码深度解析》 — 段鹏举的博客&url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/&via=https://github.com/PengjuDuan" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Pomelo 教程 ---- connector组件源码深度解析》 — 段鹏举的博客&url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/&via=https://github.com/PengjuDuan" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -432,7 +425,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/&title=《Pomelo 教程 ---- connecto组件源码深度解析》 — 段鹏举的博客&pic=https://github.com/PengjuDuan/img/lion.jpeg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/&title=《Pomelo 教程 ---- connector组件源码深度解析》 — 段鹏举的博客&pic=https://github.com/PengjuDuan/img/lion.jpeg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -442,22 +435,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/&title=《Pomelo 教程 ---- connecto组件源码深度解析》 — 段鹏举的博客&source=大爷进来玩会啊~~~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/&title=《Pomelo 教程 ---- connector组件源码深度解析》 — 段鹏举的博客&source=大爷进来玩会啊~~~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Pomelo 教程 ---- connecto组件源码深度解析》 — 段鹏举的博客&url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/&via=https://github.com/PengjuDuan" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Pomelo 教程 ---- connector组件源码深度解析》 — 段鹏举的博客&url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/&via=https://github.com/PengjuDuan" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connecto组件源码深度解析/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/PengjuDuan/2017/11/22/Pomelo-教程-connector组件源码深度解析/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -468,7 +461,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADIklEQVR42u3a0YrjQAwEwPz/T+deD5Y4LckBWy4/LcGOpyawQq15veLr/ef6//O/dyZPHX/+6ZNPa3v94sLGxsa+Cft9eB3fUwUny52sJLFgY2Njb2UfLyspEnlZqhbFfG2FLcbGxsbGbj2b318tWtjY2NjYVXY16Kk2PElLkxc/bGxs7Cewq0UiD5XydiIpS/naTsvSsLGxsS/Pzqei1//7J/NtbGxs7Auz38UrLxi9VqG6kuaz2NjY2IvYvSFuHjNV46FeyeytHxsbG3sHe3IQJw+YJgOGScvx8X5sbGzspex5IjUfxFbHCdVWBBsbG3srOy8k5zYbSSxV3Zro58TGxsZexJ4XiUmoNGlsqp9/2TJsbGzsdexqNJ8MX5sLao2Ey9+MjY2NvYjdazOqpPxwT47JDxhhY2Njb2LPQ5yzBr3Vrcy/pzwewMbGxr4hezJw7Q0Skpgpb2aOy+1rUmmxsbGxL8/OGb+L7/P2pvqWQqeFjY2NfXP2ZNA7KTDJoudjhiQOw8bGxr4vu9cG5Is4q6bkQ2hsbGxs7KjKtSKhySAhQRaO72BjY2MvYk8Gq/PF5c9OitaoWmJjY2PfkD05QFM9aplnXdWTpL2SjI2NjX1H9jxw74VQ+RJ7DdKXHwkbGxt7ETsPiaqFZw6ohlnN78fGxsa+Obsa6J879J1H/MnGfSxa2NjY2KvZyRLzZmMyGD4rVMLGxsbeys4jofkYNS82vXAqj5awsbGxN7Hzf/15A5BvRzXunwyksbGxsbeyJ4H75LBOL8zKhxDRNmFjY2M/hj1/cT487g16e6URGxsb+znsXsMwKVTJ3zn7YxOFjY2NvY5djWzyMW3ybHUlzcM6k0QKGxsb+5LsSZw0ofaiqHzTv5Q6bGxs7EXsXpTTO4LTK5BJ6cpLYBmPjY2NfRP2WWPdeQKfjyV624SNjY29m31cYHphfXVgfG5r8eW92NjY2A9m916Wv6W6rc0fBhsbG/vB7Dzoz0ezSWjVC7Z+UrexsbGxL8muDnd7x3cm+LM2DhsbG3sfu9pg5CWtEPEUMcmBod4bsbGxsW/F/gdyAsRwpiXo/wAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADIklEQVR42u3aW3LbQAwEQN//0soBXGZmACoxV80vlR7U9rrKIwD79RVfr2/X91ev3/nT4+tnvj//09q+3nFhY2NjP4T9urwSdrKUfAuu8e06f1wzNjY29nHs66XnIXFXil5HWruJ2NjY2Nh58bApY/KyBBsbGxv7HQGWf/31FuTlxPV2YGNjY38aO2nWtG2g5J2ziEpeva2Xho2Njf3r2W2L5zc/fst8GxsbG/sXs1/llQTGplRoVzL8LDY2NvZB7LZhlJcWsw2aReZw/djY2NjHsfMQSg7QbAbDbfgNDw9hY2NjH8FOio22S7M5UtOOE9ohBzY2NvZ57PyHfjvczeMqX+i+jMHGxsb+NHYbD3eVFnl8tluMjY2NfR67Hc3O2v3J0cnN3ZKBBDY2Nvap7Nl/+JbxvrFB/r03BBs2Njb2L2a3TZmk9bMvZpKQS8qbOr2xsbGxH87Oj+/ko9b2Dm0xMyxCsLGxsY9jz1rtm/HtXYPb9oARNjY29nns9nZtAbAvWvLNqleCjY2N/XB2u0Ptgl7xldwhL6KwsbGxP5mdBM+97fu8sZVv2V+2DxsbG/s49qzltA+wu4bKSQRGNRA2Njb2A9mbpn/eikqoM97sD4CNjY19HjsvJPbj3nwkvFlPsnHY2NjYZ7M3zfd/CVjdHxsbG/sg9uykT9LonxU27Rh45sLGxsY+if0+QBI8e/BwXI2NjY19HDufJOQ/+jdhUzPKA0DY2NjYZ7DzIzL3hsfmGNDs7A02Njb2qew2NpKCoY2xZKOTWEo2CBsbG/vT2JtWfhsnmyCsJyHY2NjYH8DOgyppQuWBlMM2zSlsbGzsU9n7QW/blrqOqLxEyVtLb5lvY2NjY/9X9qu8Zsdr8sM9yVA5n2AXk21sbGzsx7JnP+7bIiQpYNpPzd5T47GxsbEfwp4NcfPAy3c9Hxjk441hLw0bGxv7gew2cvZXEo1tUBWtLmxsbOwPZrdfthnQ3jVyxsbGxsbOB7ezPlZb/OQNqb/MRrCxsbEPYs/Gt/kYeI+/a+OwsbGxz2O3BcbmeE07bW63dRax2NjY2I9l/wE/95unXR72bwAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
